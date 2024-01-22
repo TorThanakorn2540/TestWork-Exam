@@ -1,0 +1,167 @@
+.container {
+    margin: 2rem auto;
+    max-width: 1300px;
+    min-width: 600px;
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        overflow-x: scroll;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.title_name {
+    padding: .5rem 1.5rem;
+    border: 2.5px #303452 solid;
+    box-shadow: 2px 2px 3px #00000035;
+    background-color: #c2e0ff;
+    color: white;
+}
+
+.title_name::after {
+    content: "GAME";
+    position: absolute;
+    top: 62%;
+    transform: rotate(330deg);
+    font-size: 28px;
+    left: 54.5%;
+    text-shadow: 1px 3px 3px #00000035;
+}
+
+.icon-game {
+    width: 64px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    bottom: 60%;
+}
+
+.icon-game img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card {
+    width: 50%;
+    padding: 2rem;
+}
+
+.card-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-body ul li {
+    cursor: pointer;
+    text-decoration: none;
+    padding: .3rem .5rem;
+    border: 1px solid #b4b4b4;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    color: #303452;
+    font-size: 16px;
+    margin: 5px 0;
+    transition: font-size .2s ease, margin .1s ease, border .1s ease;
+}
+
+.card-body ul li:hover {
+    border: 1px solid #ffd357;
+    font-weight: bold;
+    color: white;
+    background-color: #ffcc42;
+    font-size: 24px;
+    box-shadow: 0px 2px 5px #ffcd4252;
+    user-select: none;
+}
+
+.qus-title,
+.lb-title {
+    padding: 19px 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.qus-title{
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.119);
+}
+.qus-title > * {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.239);
+}
+.lb-title{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.119);
+}
+.qus-title {
+    background: #fd6963;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.lb-title {
+    background: #accc3c;
+    text-transform: uppercase;
+}
+
+:is(.qus-title, .lb-title) :is(h2, p) {
+    margin: 0;
+}
+
+.sec-qus,
+.sec-lb {
+    background: white;
+    margin-top: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 13px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.101);
+}
+
+.sec-qus {
+    align-items: stretch;
+}
+
+.sec-lb {
+    flex-direction: column;
+}
+
+.g-line {
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+    margin: 4rem 0;
+}
+
+.lines {
+    height: 1.5px;
+    width: 80px;
+    background: rgba(255, 255, 255, 0.839);
+    box-shadow: 4px 0px 3px rgba(0, 0, 0, 0.175);
+}
+
+.sec-lb .card-body ul li span {
+    border-right: 1.6px solid white;
+    margin-right: 10px;
+    padding-left: 12px;
+    padding-right: 20px;
+}
+
+.sec-lb .card-body ul li {
+    border: 1px solid #ffd357;
+    font-weight: bold;
+    color: white;
+    background-color: #ffcc42;
+    font-size: 24px;
+    box-shadow: 0px 2px 5px #ffcd4252;
+    user-select: none;
+}
