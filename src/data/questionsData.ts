@@ -129,9 +129,9 @@ export const questionsData = [
     ],
     correctAnswer: "Leonardo da Vinci",
   },
-  {
-    question: "What is the largest desert in the world?",
-    answers: ["Sahara Desert", "Arabian Desert", "Gobi Desert", "Antarctica"],
-    correctAnswer: "Antarctica",
-  },
+  // {
+  //   question: "What is the largest desert in the world?",
+  //   answers: ["Sahara Desert", "Arabian Desert", "Gobi Desert", "Antarctica"],
+  //   correctAnswer: "Antarctica",
+  // },
 ];
